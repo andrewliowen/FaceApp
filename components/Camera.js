@@ -13,11 +13,10 @@ import HistoryHistory from './HistoryHistory';
 import Home from './Home';
 import Share from './Share';
 
-export default class Camera extends Component {
+export default class CameraCamera extends Component {
 
   constructor(props) {
     super(props);
-  }
 
   this.state = {
     emotion: 'emotionless',
@@ -43,9 +42,11 @@ takePicture() {
           captureTarget={Camera.constants.CaptureTarget.memory}
         >
         </Camera>
+      </View>
      );
   }
   componentWillMount() {
+
     const initial = Orientation.getInitialOrientation();
     this.handleOrientationChange(initial);
   }
