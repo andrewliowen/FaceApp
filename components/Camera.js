@@ -28,10 +28,6 @@ export default class Camera extends Component {
 takePicture() {
   const options = {};
   this.camera.capture({ metadata: options })
-  .then((result) => {
-    this.findEmotions(result.data);
-    this.setState({ emotion: 'loading' });
-  })
   .catch(err => console.error(err));
 }
 
