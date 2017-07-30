@@ -5,6 +5,7 @@ import Data from './components/Data';
 import HistoryHistory from './components/HistoryHistory';
 import Share from './components/Share';
 import Home from './components/Home';
+import Camera from './components/Camera';
 
 const TabIcon = ({ selected, title }) => {
   return (
@@ -28,6 +29,13 @@ const App = () => {
               title='Welcome to FaceApp!'
               initial
             />
+          </Scene>
+          <Scene key='camera' title='Camera' icon={TabIcon}>
+            <Scene
+              key='camera'
+              component={Camera}
+              title=''
+          />
           </Scene>
           <Scene key='data' title='Data' icon={TabIcon}>
             <Scene
