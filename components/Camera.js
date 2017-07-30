@@ -15,6 +15,26 @@ import Share from './Share';
 
 export default class Camera extends Component {
 
+  constructor(props) {
+    super(props);
+  }
+
+  this.state = {
+    emotion: 'emotionless',
+    rotation: 0,
+  };
+}
+
+takePicture() {
+  const options = {};
+  this.camera.capture({ metadata: options })
+  .then((result) => {
+    this.findEmotions(result.data);
+    this.setState({ emotion: 'loading' });
+  })
+  .catch(err => console.error(err));
+}
+
   render() {
 
     const { emotion, rotation } = this.state;
