@@ -1,9 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, AppRegistry } from 'react-native';
 import { Actions, Router, Scene } from 'react-native-router-flux';
-import HistoryHistory from './HistoryHistory';
-import Share from './Share';
-import Home from './Home';
 
 export default class Data extends React.Component {
   render() {

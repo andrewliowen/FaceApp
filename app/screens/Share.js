@@ -1,9 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, AppRegistry } from 'react-native';
 import { Actions, Router, Scene } from 'react-native-router-flux';
-import Data from './Data';
-import HistoryHistory from './HistoryHistory';
-import Home from './Home';
 
 export default class Share extends React.Component {
   render() {

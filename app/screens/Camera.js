@@ -8,10 +8,6 @@ import {
 import Camera from 'react-native-camera';
 import RNFetchBlob from 'react-native-fetch-blob';
 import Orientation from 'react-native-orientation';
-import Data from './Data';
-import HistoryHistory from './HistoryHistory';
-import Home from './Home';
-import Share from './Share';
 
 export default class CameraCamera extends Component {
 
